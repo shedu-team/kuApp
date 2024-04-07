@@ -7,6 +7,7 @@ class Flight():
         if not self.enough_seats():
             return False
         self.passengers.append(name)
+        # index
         return True
     def enough_seats(self):
         return self.capacity - len(self.passengers)
